@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "creating first node js server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev" : "nodemon server.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P-1000/server.git"
+  },
+  "author": "DARTH VADER",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P-1000/server/issues"
+  },
+  "homepage": "https://github.com/P-1000/server#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
