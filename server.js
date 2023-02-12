@@ -10,12 +10,14 @@ const server = http.createServer((req, res) => {
       if(method === 'GET'){
         res.writeHead(200,{"Content-Type":"text/html"});
         res.write(todos.toString());
-        res.end();
+        
+      }else{
+        res.writeHead(501);
       }
     }else{
-      res.writeHead(501);
+      res.writeHead(404);
     }
-   
+    res.end();
 
 }).listen(port, () => {
     console.log(`Server is listening on port ${port}`);
